@@ -30,10 +30,25 @@ const perguntas = [
     alternativas: ["a)verdadeiro", "b)falso"],
   },
   {
-    enunciado: "O incentivo a atividades comunitárias que integram diferentes faixas etárias ajuda a reduzir a solidão e a construir uma sociedade menos egoísta?
-,
+    enunciado: "O incentivo a atividades comunitárias que integram diferentes faixas etárias ajuda a reduzir a solidão e a construir uma sociedade menos egoísta?",
     alternativas: ["a)verdadeiro", "b)falso"],
   },
 
 ];
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta() {
+  perguntaAtual = perguntas[atual];
+  caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+function mostraAlternativas() {
+  for (const alternativa of perguntaAtual.alternativas) {
+    const botaoAlternativas = document.createElement("button");
+    botaoAlternativas.textContent = alternativa;
+    caixaAlternativas.appendChild(botaoAlternativas);
+  }
+}
+
+mostraPergunta();
 

@@ -7,7 +7,7 @@ const textoResultado = document.querySelector(".texto-resultado");
 const perguntas = [
   {
     enunciado: "Você tem mais amigos da sua idade ou com uma faixa etária muito diferente da sua?",
-    alternativas: ["a)sim", "b)não"],
+    alternativas: ["a) Sim", "b) Não"],
   },
   {
     enunciado: "O etarismo (ou preconceito de idade) costuma criar barreiras sociais que dificultam a aproximação e a amizade entre pessoas de gerações diferentes?",
